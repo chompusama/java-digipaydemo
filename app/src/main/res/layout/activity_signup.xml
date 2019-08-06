@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/blue_topbar"/>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="340dp"
+        android:layout_height="580dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/shadow_16402">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Create an account"/>
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First name (eng)"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edt_first_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:paddingBottom="50dp"
+            android:maxLines="1"
+            android:backgroundTint="@color/grey_line"/>
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last name (eng)"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edt_last_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:backgroundTint="@color/grey_line"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edt_phone_number"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:inputType="number"
+            android:maxLength="10"
+            android:backgroundTint="@color/grey_line"
+            android:layout_marginBottom="10dp"
+            android:hint=""/>
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Citizen ID"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edt_citizen_id"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:maxLength="14"
+            android:inputType="number"
+            android:backgroundTint="@color/grey_line"
+            android:layout_marginBottom="10dp"
+            android:hint=""/>
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:backgroundTint="@color/grey_line"
+            android:inputType="textPassword"
+            android:hint=""/>
+
+        <TextView
+            android:id="@+id/tv_signup_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="left"
+            android:textColor="#E74C3C"
+            android:layout_marginBottom="10dp"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="sign up"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_rounded"/>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:text="Have an account ? "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:onClick="onClickSignin"
+                android:text="Sign in"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <chadaporn.piaras.kku.ac.th.audemo.GifImageView
+        android:id="@+id/loading_animated_signup"
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

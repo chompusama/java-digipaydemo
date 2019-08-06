@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/lobster" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/playlist" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/aqua" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/supermarket" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/rsu" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/clound_light" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/open_sans_light" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/open_sans_semi_blod" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/gothic_reg" />
+
+</font-family>

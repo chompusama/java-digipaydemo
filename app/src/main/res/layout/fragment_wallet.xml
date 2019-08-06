@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <chadaporn.piaras.kku.ac.th.audemo.GifImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/loading_animated_wallet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="50dp"
+        android:visibility="invisible"/>
+
+    <!--content layout-->
+    <RelativeLayout
+        android:id="@+id/layout_wallet_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="right">
+            <ImageButton
+                android:id="@+id/btn_profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:alpha="0.7"
+                android:src="@drawable/user_1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans_semi_blod"
+                android:text="My Wallet"/>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_mywallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans_semi_blod"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:fontFamily="@font/gothic_reg"
+                android:text="฿ 256.75"/>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="355dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shadow_16402"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="120dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <!--<ImageButton-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:background="#00000000"-->
+                    <!--android:src="@drawable/flat_transfer_2"/>-->
+
+                    <!--<View-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/grey_line"/>-->
+
+                    <!--<ImageButton-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:background="#00000000"-->
+                    <!--android:src="@drawable/flat_download"/>-->
+
+                    <!--<View-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/grey_line"/>-->
+
+                    <!--<ImageButton-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:background="#00000000"-->
+                    <!--android:src="@drawable/flat_qrcode_2"/>-->
+
+                    <Button
+                        android:id="@+id/btn_transfer"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Transfer"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/button_rounded_color"
+                        android:drawableTop="@drawable/ic_left_transfer"/>
+
+                    <Button
+                        android:id="@+id/btn_topup"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@android:color/white"
+                        android:text="Top-up"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button_rounded_color"
+                        android:drawableTop="@drawable/ic_left_topup"/>
+
+                    <Button
+                        android:id="@+id/btn_payment"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@android:color/white"
+                        android:text="Payment"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button_rounded_color"
+                        android:drawableTop="@drawable/ic_left_qrcode"/>
+
+                    <!---->
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_transfer"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="75dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:text="Transfer"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:textColor="@color/blue_middle"-->
+                        <!--android:background="@drawable/button_rounded_color"-->
+                        <!--android:drawableTop="@drawable/ic_left_transfer"/>-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_topup"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="75dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:textColor="@color/blue_middle"-->
+                        <!--android:text="Top-up"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:background=""-->
+                        <!--android:drawableTop="@drawable/ic_left_download_v2"/>-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_payment"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="75dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:textColor="@color/blue_middle"-->
+                        <!--android:text="Payment"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:drawableTop="@drawable/ic_left_qrcode_v2"/>-->
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bg_building_4"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_history"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_rounded_gradient"
+                android:adjustViewBounds="true"
+                android:text="History"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--link account layout-->
+    <RelativeLayout
+        android:id="@+id/layout_link_account"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/img_register"/>
+
+            <TextView
+                android:layout_marginTop="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:text="Please link profile with DigioPay Wallet"/>
+            <Button
+                android:id="@+id/btn_register_wallet"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_rounded"
+                android:text="Register"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
